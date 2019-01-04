@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/bg1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/background12"
+        android:scaleType="fitXY"/>
+    <ImageView
+        android:id="@+id/bg2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/background12"
+        android:scaleType="fitXY" />
+    <RelativeLayout
+        android:id="@+id/waveyRel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></RelativeLayout>
+    <me.itangqi.waveloadingview.WaveLoadingView
+        android:id="@+id/bgWaves"
+        android:layout_width="match_parent"
+        android:layout_height="144dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        app:wlv_progressValue="80"
+        app:wlv_shapeType="rectangle"
+        app:wlv_triangle_direction="west"
+        app:wlv_waveAmplitude="100"
+        app:wlv_waveColor="@color/darkPink" />
+
+    <me.itangqi.waveloadingview.WaveLoadingView
+        android:id="@+id/frontWaves"
+        android:layout_width="match_parent"
+        android:layout_height="92dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        app:wlv_progressValue="80"
+        app:wlv_shapeType="rectangle"
+        app:wlv_triangle_direction="north"
+        app:wlv_waveAmplitude="100"
+        app:wlv_waveColor="@color/indigo" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="12dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp">
+
+        <Button
+            android:id="@+id/reCenter"
+            android:layout_width="wrap_content"
+            android:layout_height="34dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@android:color/white"
+            android:text="Recentre" />
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/cover"
+        android:background="@android:color/transparent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+</RelativeLayout>
